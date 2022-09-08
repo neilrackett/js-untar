@@ -35,7 +35,6 @@ function untar(arrayBuffer) {
 				case "extract":
 					var file = decorateExtractedFile(message.data);
 					progress(file);
-					file = null;
 					break;
 				case "complete":
 					worker.terminate();
